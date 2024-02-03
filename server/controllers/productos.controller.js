@@ -5,25 +5,31 @@ const productosController={};
 
 productosController.getProductos= async(req, res)=>
 {
-  const productos= await Producto.find();
-  res.json(productos);
-}
+  try {
+    const productos= await Producto.find();
+    res.json(productos);
+  } catch (error) {
+    res.status(500).send(error);
+  }
+};
 
 productosController.createProductos= async(req,res)=>{
     const producto=new Producto(req.body);
     console.log(producto);
     await producto.save();
     res.json('status: Producto guardado');
-   }
-   
-   productosController.getProducto=async(req,res)=>{
+   };
+
+   productosController.getProductoByDescription=async(req,res)=>{
     try {
-        const productos = await Producto.find();
-        res.send(productos);
+        const descripcion = req.params.descripcion;
+        const productos = await Producto.findOne({ descripcion: descripcion });
+        res.json(productos);
       } catch (error) {
-        res.status(500).send(error);
+        res.status(500).json({ error: error.message });
       }
-   }
+   };
+
    productosController.editProductoByDescription = async (req, res) => {
     try {
       const descripcion = req.params.descripcion;
