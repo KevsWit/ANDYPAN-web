@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "65be6139286a5d4917a3357b"
+  },
+  "descripcion": "La Lechera Entera",
+  "unidades": 35,
+  "valor_unitario": 1.41,
+  "path_imagen": "LaLecheraEntera.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65be6146286a5d4917a3357d"
+  },
+  "descripcion": "La Lechera Semidescremada",
+  "unidades": 25,
+  "valor_unitario": 1.41,
+  "path_imagen": "LaLecheraSemidescremada.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65be6155286a5d4917a3357f"
+  },
+  "descripcion": "Pastel de Vainilla",
+  "unidades": 5,
+  "valor_unitario": 4,
+  "path_imagen": "PasteldeVainilla.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65be6165286a5d4917a33581"
+  },
+  "descripcion": "Tres Leches",
+  "unidades": 5,
+  "valor_unitario": 1.5,
+  "path_imagen": "TresLeches.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65be6173286a5d4917a33583"
+  },
+  "descripcion": "Pan de Ambato",
+  "unidades": 40,
+  "valor_unitario": 0.15,
+  "path_imagen": "PandeAmbato.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65be617f286a5d4917a33585"
+  },
+  "descripcion": "Enrollado",
+  "unidades": 40,
+  "valor_unitario": 0.2,
+  "path_imagen": "Enrollado.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65be618a286a5d4917a33587"
+  },
+  "descripcion": "Croissant",
+  "unidades": 40,
+  "valor_unitario": 0.25,
+  "path_imagen": "Croissant.jpg",
+  "__v": 0
+}]

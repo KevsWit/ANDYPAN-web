@@ -1,0 +1,95 @@
+[{
+  "_id": {
+    "$oid": "65bfef3937e4b8b5fa56bb7c"
+  },
+  "nombre": "Consumidor Final",
+  "correo": "andypan@outlook.com",
+  "telefono": "9999999",
+  "dir": "Quitumbe",
+  "fecha": "2024-02-04",
+  "cedula": {
+    "$numberLong": "9999999999"
+  },
+  "productos": [
+    {
+      "descripcion": "La Lechera Entera",
+      "unidades": 15,
+      "valor_unitario": 1.41,
+      "valor_final": 21.15,
+      "_id": {
+        "$oid": "65bfef3937e4b8b5fa56bb7d"
+      }
+    },
+    {
+      "descripcion": "Pastel de Vainilla",
+      "unidades": 2,
+      "valor_unitario": 4,
+      "valor_final": 8,
+      "_id": {
+        "$oid": "65bfef3937e4b8b5fa56bb7e"
+      }
+    },
+    {
+      "descripcion": "Croissant",
+      "unidades": 3,
+      "valor_unitario": 0.25,
+      "valor_final": 0.75,
+      "_id": {
+        "$oid": "65bfef3937e4b8b5fa56bb7f"
+      }
+    }
+  ],
+  "valor_total": 29.9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bfefc837e4b8b5fa56bb89"
+  },
+  "nombre": "Kevin Castillo",
+  "correo": "kev.gcastillo@outlook.com",
+  "telefono": "2914514",
+  "dir": "Quitumbe",
+  "fecha": "2024-02-04",
+  "cedula": 1720316601,
+  "productos": [
+    {
+      "descripcion": "Pan de Ambato",
+      "unidades": 5,
+      "valor_unitario": 0.15,
+      "valor_final": 0.75,
+      "_id": {
+        "$oid": "65bfefc837e4b8b5fa56bb8a"
+      }
+    },
+    {
+      "descripcion": "La Lechera Entera",
+      "unidades": 1,
+      "valor_unitario": 1.41,
+      "valor_final": 1.41,
+      "_id": {
+        "$oid": "65bfefc837e4b8b5fa56bb8b"
+      }
+    },
+    {
+      "descripcion": "Pastel de Vainilla",
+      "unidades": 1,
+      "valor_unitario": 4,
+      "valor_final": 4,
+      "_id": {
+        "$oid": "65bfefc837e4b8b5fa56bb8c"
+      }
+    },
+    {
+      "descripcion": "Tres Leches",
+      "unidades": 1,
+      "valor_unitario": 1.5,
+      "valor_final": 1.5,
+      "_id": {
+        "$oid": "65bfefc837e4b8b5fa56bb8d"
+      }
+    }
+  ],
+  "valor_total": 7.66,
+  "__v": 0
+}]
