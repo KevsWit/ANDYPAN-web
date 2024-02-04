@@ -12,7 +12,7 @@
       </div>      
   
     <!-- Formulario para mostrar y editar los productos agregados -->
-    <form>
+    <form *ngIf="productosAgregados.length > 0">
         <h3>Productos agregados:</h3>
         <table class="table">
         <thead>
