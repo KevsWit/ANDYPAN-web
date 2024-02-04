@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="mb-4">Detalle de la Venta</h2>
+  
+         <!-- Botón "Consumidor Final" -->
+        <button class="btn btn-primary mb-3" (click)="agregarConsumidorFinal()">Consumidor Final</button>
+
+        <!-- Información de la factura -->
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" class="form-control" [(ngModel)]="factura.nombre" required/>
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" class="form-control" [(ngModel)]="factura.correo" required/>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" class="form-control" [(ngModel)]="factura.telefono" required/>
+        </div>
+        <div class="form-group">
+          <label for="dir">Dirección:</label>
+          <input type="text" id="dir" class="form-control" [(ngModel)]="factura.dir" required/>
+        </div>
+        <div class="form-group">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" class="form-control" [(ngModel)]="factura.fecha" required/>
+        </div>
+        <div class="form-group">
+          <label for="cedula">Cédula:</label>
+          <input type="number" id="cedula" class="form-control" [(ngModel)]="factura.cedula" required/>
+        </div>
+  
+        <!-- Lista de productos -->
+        <form>
+            <h3>Productos agregados:</h3>
+            <table class="table">
+            <thead>
+                <tr>
+                <th>Descripción</th>
+                <th>Unidades</th>
+                <th>Valor Unitario</th>
+                <th>Valor Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let producto of factura.productos">
+                    <td>{{ producto.descripcion }}</td>
+                    <td>{{ producto.unidades }}</td>
+                    <td>{{ producto.valor_unitario }}</td>
+                    <td>{{ producto.valor_final }}</td>
+                  </tr>                           
+            </tbody>
+            </table>
+        </form>
+        <div class="mt-4">
+          <h3>Valor Total: {{ factura.valor_total }}</h3>
+        </div>
+        <button class="btn btn-primary" (click)="guardarFactura()">Guardar Factura</button>
+      </div>
+    </div>
+  </div>
+  

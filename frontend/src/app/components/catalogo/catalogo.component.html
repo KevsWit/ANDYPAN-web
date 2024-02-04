@@ -1,1 +1,63 @@
-<p>catalogo works!</p>
+<div class="container">
+    <!-- Formulario para agregar producto -->
+    <div *ngIf="productoSeleccionado">
+        <form (submit)="agregarProductoConCantidad($event)">
+            <h3>Producto a comprar: {{ productoSeleccionado.descripcion }}</h3>
+          <div class="form-group">
+            <label for="cantidad" style="font-size: 20px;">Cantidad a comprar:</label>
+            <input type="number" class="form-control" id="cantidad" [(ngModel)]="cantidad" name="cantidad" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+      </div>      
+  
+    <!-- Formulario para mostrar y editar los productos agregados -->
+    <form>
+        <h3>Productos agregados:</h3>
+        <table class="table">
+        <thead>
+            <tr>
+            <th>Descripción</th>
+            <th>Unidades</th>
+            <th>Valor Unitario</th>
+            <th>Valor Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let producto of productosAgregados">
+                <td>{{ producto.descripcion }}</td>
+                <td>
+                  <input type="number" class="form-control" [(ngModel)]="producto.unidades" name="unidades-{{ producto.id }}" required>
+                </td>
+                <td>{{ producto.valor_unitario }}</td>
+                <td>{{ producto.valor_final }}</td>
+                <td>
+                  <button class="btn btn-danger" (click)="eliminarProducto(producto.id)">Eliminar</button>
+                </td>
+              </tr>                           
+        </tbody>
+        </table>
+        <button class="btn btn-success" (click)="calcularValorTotal()">Calcular Valor Total</button>
+        <button class="btn btn-primary" (click)="guardarProductos()">Guardar</button>
+    </form>
+
+      <!-- Mostrar el valor total -->
+      <div *ngIf="mostrarValorTotal && productosAgregados.length > 0">
+        <p>Valor Total: ${{ calcularValorTotal() }}</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-4" *ngFor="let producto of productos">
+        <div class="card mb-3">
+          <img [src]="getImageUrl(producto)" class="card-img-top" title="{{ producto.descripcion }}" alt="{{ producto.descripcion }}" (click)="productoSeleccionado = producto">
+          <div class="card-body">
+            <h5 class="card-title">{{ producto.descripcion }}</h5>
+            <p class="card-text">Unidades: {{ producto.unidades }}</p>
+            <p class="card-text">Valor Unitario: {{ producto.valor_unitario }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
