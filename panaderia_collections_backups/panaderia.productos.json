@@ -5,7 +5,7 @@
   "descripcion": "La Lechera Entera",
   "unidades": 35,
   "valor_unitario": 1.41,
-  "path_imagen": "LaLecheraEntera.jpg",
+  "path_imagen": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRemNDNk38ciRlaHTbDJpfApxbWStQfoMK13lsdgrnC3C3O5InQyHLVAtCiVNSU9T8R2_27Ql5PjfCBipJsR4lP2sZV=s2560",
   "__v": 0
 },
 {
@@ -15,7 +15,7 @@
   "descripcion": "La Lechera Semidescremada",
   "unidades": 25,
   "valor_unitario": 1.41,
-  "path_imagen": "LaLecheraSemidescremada.jpg",
+  "path_imagen": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYSivcT8oiZ7t5zZtJ_dN7sNwLkEstYUJBCR0bK2IEUDlsEpCeKfSE80BFW52-F8rztUpv7lvU7S_--RG2h8VC2pfxH0=s2560",
   "__v": 0
 },
 {
@@ -23,9 +23,9 @@
     "$oid": "65be6155286a5d4917a3357f"
   },
   "descripcion": "Pastel de Vainilla",
-  "unidades": 5,
+  "unidades": 1,
   "valor_unitario": 4,
-  "path_imagen": "PasteldeVainilla.jpg",
+  "path_imagen": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYR31wEnqZgcS6KiPH1oae5jWEsaHB2PBYKXEvjdCfEf2ud6SJpZeJAsb0Oc87VMjPOeP_xb3KIHkVidrKjhfBbqpqoA=s2560",
   "__v": 0
 },
 {
@@ -35,7 +35,7 @@
   "descripcion": "Tres Leches",
   "unidades": 5,
   "valor_unitario": 1.5,
-  "path_imagen": "TresLeches.jpg",
+  "path_imagen": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRw7SUiFdAT0w19OxBuubcY5fvb5pXITbaibO5b0hRkvnUYyKP8h5SSnHRfcnC-cS78vMEDmDfAYPuG-VLydrLWaNOP7A=s2560",
   "__v": 0
 },
 {
@@ -45,7 +45,7 @@
   "descripcion": "Pan de Ambato",
   "unidades": 40,
   "valor_unitario": 0.15,
-  "path_imagen": "PandeAmbato.jpg",
+  "path_imagen": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYR_wFN2s4CDDIsj-UKbAEe9RqlLT4GaWNOavhs1VSrO90ppWOpcfnIbojqQ9_OB8izTVcY-IvjZYzIm4_a1zH8JrPWv=s2560",
   "__v": 0
 },
 {
@@ -55,7 +55,7 @@
   "descripcion": "Enrollado",
   "unidades": 40,
   "valor_unitario": 0.2,
-  "path_imagen": "Enrollado.jpg",
+  "path_imagen": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYTU-VguwbZzXBQTROkZuYhx_ld7JBVldC6TbdDUfbt5BoB9tIrh3-rZBZUpQzdskbUtR_Xv0bIbIbbgSP12EQY0SHlKZQ=s2560",
   "__v": 0
 },
 {
@@ -65,6 +65,6 @@
   "descripcion": "Croissant",
   "unidades": 40,
   "valor_unitario": 0.25,
-  "path_imagen": "Croissant.jpg",
+  "path_imagen": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYTAwiOp2GGLMCRdOW83g8ei2pB2QeMxaqwXyRcpiKAisv7pW1WGqBBAIcBorT-BzZ_1998LG3oOn0Uh6dh-TgIA5ITntA=s2560",
   "__v": 0
 }]
