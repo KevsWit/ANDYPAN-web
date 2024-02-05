@@ -27,10 +27,6 @@ export class CatalogoComponent implements OnInit {
       .subscribe(productos => this.productos = productos);
   }
 
-  getImageUrl(producto: Producto): string {
-    return `../../../assets/images/${producto.path_imagen}`;
-  }
-
   agregarProductoConCantidad(event: Event): void {
     event.preventDefault(); // Detener el envío automático del formulario
 

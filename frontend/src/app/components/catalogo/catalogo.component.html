@@ -43,14 +43,14 @@
 
       <!-- Mostrar el valor total -->
       <div *ngIf="mostrarValorTotal && productosAgregados.length > 0">
-        <p>Valor Total: ${{ calcularValorTotal() }}</p>
+        <h4>Valor Total: ${{ calcularValorTotal() }}</h4>
       </div>
     </div>
   
     <div class="row">
       <div class="col-md-4" *ngFor="let producto of productos">
         <div class="card mb-3">
-          <img [src]="getImageUrl(producto)" class="card-img-top" title="{{ producto.descripcion }}" alt="{{ producto.descripcion }}" (click)="productoSeleccionado = producto">
+          <img [src]="producto.path_imagen" class="card-img-top" title="{{ producto.descripcion }}" alt="{{ producto.descripcion }}" (click)="productoSeleccionado = producto">
           <div class="card-body">
             <h5 class="card-title">{{ producto.descripcion }}</h5>
             <p class="card-text">Unidades: {{ producto.unidades }}</p>
