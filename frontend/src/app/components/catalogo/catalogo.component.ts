@@ -15,6 +15,7 @@ export class CatalogoComponent implements OnInit {
   cantidad: number = 0;
   productoSeleccionado: Producto | null = null; // Inicializar productoSeleccionado como null
   mostrarValorTotal: boolean = false;
+  valor_t: number = 0;
   constructor(private productoService: ProductoService,
     private router: Router) { }
 
@@ -77,6 +78,7 @@ export class CatalogoComponent implements OnInit {
   
     this.recalcularValorFinal();
     this.mostrarValorTotal = true;
+    this.valor_t=this.productosAgregados.reduce((total, producto) => total + producto.valor_final, 0);
     return this.productosAgregados.reduce((total, producto) => total + producto.valor_final, 0);
   }
   

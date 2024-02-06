@@ -50,10 +50,12 @@ export class DetalleVentaComponent implements OnInit {
           
           // Actualizar las unidades de los productos en la base de datos
           this.actualizarUnidadesProductos();
-          // Redirigir a '/catalogo' y forzar la actualización de la página
-          this.router.navigateByUrl('/catalogo').then(() => {
+          
+          // Agregar un tiempo de espera antes de recargar la página
+          setTimeout(() => {
+            this.router.navigateByUrl('/catalogo');
             window.location.reload();
-          });
+          }, 3000); // Espera 1 segundo antes de recargar la página
         },
         (error) => {
           console.error('Error al guardar la factura:', error);

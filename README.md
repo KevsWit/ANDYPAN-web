@@ -63,6 +63,11 @@ ng new --no-standalone frontend
 9. Restablecer las colecciones de datos.
 9.1. Haz clic en `ADD DATA`.
 9.2. Importa el JSON file.
+
+## Implementación de cluster MongoDB en Azure
+- Se ha actualizado el sistema para el uso de una base de datos en la nube, en Azure.
+- En el documento `database.js` se encuentra el formato de la cadena de conexión que se usó.
+
 ## Contribución
 - Si deseas contribuir a este proyecto, por favor crea un pull request describiendo tus cambios propuestos.
 

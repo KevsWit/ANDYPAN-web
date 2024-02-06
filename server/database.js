@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const URI='mongodb://127.0.0.1:27017/panaderia';
+const URI = 'mongodb://username:password@host:port/[database]?ssl=true';
 mongoose.connect(URI)
 .then(db=> console.log('BD conectada'))
 .catch(err => console.error(err));
